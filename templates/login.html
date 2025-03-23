@@ -1,0 +1,22 @@
+<!-- Extend the base.html template -->
+{% extends 'base.html' %}
+
+<!-- Define the content block -->
+{% block content %}
+    <!-- Display a heading -->
+    <h1>Login</h1>
+    
+    <!-- Define a form -->
+    <form action="" method="post">
+        <!-- Define a label and input field for the username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <!-- Define a label and input field for the password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <!-- Define a submit button -->
+        <input type="submit" value="Login">
+    </form>
+{% endblock %}
